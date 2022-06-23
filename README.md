@@ -4,6 +4,12 @@
 
 ## `Resumo` 
 - Nosso objetivo nesse projetinho é utilizar ferramentas como o arduino entre outras para implementação de uma pequena trava eletrica que poderá ser instalada em uma porta que será aberta com uma senha dos usuários cadastrados, esses usuários serão armazenados dentro de um cartão ssd. Será usado também algumas ferramentas ou componentes como o módulo relé rtc onde será possível guardamos historicos de acesso a porta. Com esse relé podemos guardar a data, hora e quem acessou ao local. Também será possível a utilização de um módulo buzzer 5v para emitir um bip ao usuário apertar uma tecla.
+
+##
+## `Autores`
+- Amanda Rodrigues
+- William Silva
+
 ## `Material` 
 - Teclado Matricial Membrana 4x4 para Arduino - 16 teclas
 <img align="center" alt="Arduino uno" height="250" width="250" src="https://www.usinainfo.com.br/1023864-thickbox_default/teclado-matricial-membrana-4x4-para-arduino-16-teclas.jpg" />
