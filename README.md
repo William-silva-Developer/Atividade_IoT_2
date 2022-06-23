@@ -1,6 +1,8 @@
 # `Proposta de sistema de trava eletrica com senha` 
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 ## Essa proposta esta destinada a uma atividade de sala de aula do curso de tsi da disciplina de IoT.
-## `Resumo`
+
+## `Resumo` 
 - Nosso objetivo nesse projetinho é utilizar ferramentas como o arduino entre outras para implementação de uma pequena trava eletrica que poderá ser instalada em uma porta que será aberta com uma senha dos usuários cadastrados, esses usuários serão armazenados dentro de um cartão ssd. Será usado também algumas ferramentas ou componentes como o módulo relé rtc onde será possível guardamos historicos de acesso a porta. Com esse relé podemos guardar a data, hora e quem acessou ao local. Também será possível a utilização de um módulo buzzer 5v para emitir um bip ao usuário apertar uma tecla.
 ## `Material` 
 - Teclado Matricial Membrana 4x4 para Arduino - 16 teclas
