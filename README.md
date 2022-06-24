@@ -2,7 +2,7 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 ## `Resumo` 
-- Nosso projeto tem como objetivo a implementação de uma fechadura ou trava eletrica onde será acionada por um sensor biométrico. Essa fechadura terá um módulo relogio onde será possível guardar o dia e a hora que uma sala por exemplo foi acessada. Garantindo assim um controle melhor de cada ambiente. Para isso usaremos algumas ferramentas como: Arduino uno, Ethernet shield entre outros.
+- Nosso projeto tem como objetivo a implementação de uma fechadura ou trava eletrica onde será acionada por um sensor biométrico. Essa fechadura terá um módulo relogio onde será possível guardar o dia e a hora que uma sala por exemplo foi acessada. Garantindo assim um controle melhor do ambiente. Para isso usaremos algumas ferramentas como: Arduino uno, Ethernet shield entre outros.
 
 ##
 ## `Autores`
