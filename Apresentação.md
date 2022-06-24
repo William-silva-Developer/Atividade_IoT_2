@@ -1,6 +1,6 @@
 # `Projeto de Programação para Internet das Coisas`
 
-## **Sistema de trava elétrica com senha**
+## **`Sistema de trava elétrica com senha`**
 
 **Equipe:**
 - Amanda Rodrigues
