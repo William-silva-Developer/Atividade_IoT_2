@@ -68,3 +68,6 @@ Acesso em: 18 de junho de 2022.
 
 KIT ARDUINO 37 SENSORES EM 1 + CAIXA ORGANIZADORA. UsinaInfo, [s.d.]. Disponível em: https://www.usinainfo.com.br/kit-arduino/kit-arduino-sensores-37-em-1-caixa-organizadora-5516.html .
 Acesso em: 3 de junho de 2022.
+
+MICRO SERVO MOTOR 9G SG90 COM ARDUINO UNO. FilipeFlop, 2013. Disponível em: https://www.filipeflop.com/blog/micro-servo-motor-9g-sg90-com-arduino-uno/#:~:text=As%20conex%C3%B5es%20desse%20motor%20com,Porta%20Digital%206%20(D6).
+Acesso em: 24 de junho de 2022.
