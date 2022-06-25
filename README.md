@@ -6,7 +6,7 @@
 
 ##
 ## `Autores`
-- Amanda Rodrigues
+- [Amanda Rodrigues](https://github.com/amanda-rosa)
 - William Silva
 
 ##
