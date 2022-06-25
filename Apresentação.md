@@ -305,14 +305,19 @@ que possuir tenham uma vida de menos preocupação em relação a segurança, e 
 
 ### `Trabalhos futuros:`
 
-Como possíveis trabalhos futuros, pode-se apontar a implementação de um aplicativo ou um possível relógio de pulso onde poderão ser capazes de liberar o acesso ao local. Nossa intensão é cada vez mais aprimorar aquilo que criamos para que possamos cada vez mais fornecer aos usuários uma maior facilidade em usá-las 
+Como possíveis trabalhos futuros, pode-se apontar a implementação de um aplicativo ou um possível relógio de pulso onde poderão ser capazes de liberar o acesso ao local. Nossa intenção é cada vez mais aprimorar aquilo que criamos para que possamos cada vez mais fornecer aos usuários uma maior facilidade em usá-las.
+
+Em relação as nossas dificuldades técnicas, foi na construção da nossa implementação, que não tinha alguns componentes de acordo com o que tinhamos em mente do projeto original. Com isso, fomos montando com o que tinhamos. Mas, para contornar as dificuldades, alteramos algumas coisas do projeto original, e com isso conseguimos já ter uma boa parte na nossa implementação. Por exemplo: O funcionamento do servo motor com o buzzer, e o funcionamento do sensor biométrico. Pois, antes seria feito com um teclado para digitar a senha, e agora será realizado via biometria.
 
 
 
 ### `Vantagens e Desvantagens:`
 
--
--
+- **Vantagens:** Um sistema mais duradouro comparado com os já existentes, de acordo com pesquisas realizadas as existentes possuem pouco tempo de duração.
+- Nosso sistema será mais acessível a todos. Pois as já existentes estão em torno de 1.000,00. E sabemos que nem todos tem condição para adquirir um sistema desse.
+
+- **Desvantagens:** Não indicado para portas metálicas, por causa da limitação de espaço em algumas dessas portas.
+
 
 ### `Referência:`
 
