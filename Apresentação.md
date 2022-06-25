@@ -51,7 +51,7 @@ A realização deste trabalho será realizado por [Amanda Rodrigues](https://git
 Quantitativo
 
 ### Tipo pesquisa: 
-Este trabalho envolveu pesquisas exploratórias como também esperimental.
+Este trabalho envolveu pesquisas exploratórias como também experimental.
 
 
 
@@ -60,9 +60,9 @@ O projeto levará aproximadamente 4 mês para sua devida realização.
 
 ### Coleta de dados
 
-###Análise dos dados
+### Análise dos dados
 
-###Apresentação
+### Apresentação
 
 
 
