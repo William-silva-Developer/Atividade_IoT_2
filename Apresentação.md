@@ -305,13 +305,9 @@ que possuir tenham uma vida de menos preocupação em relação a segurança, e 
 
 ### `Trabalhos futuros:`
 
+Como possíveis trabalhos futuros, pode-se apontar a implementação de um aplicativo ou um possível relógio de pulso onde poderão ser capazes de liberar o acesso ao local. Nossa intensão é cada vez mais aprimorar aquilo que criamos para que possamos cada vez mais fornecer aos usuários uma maior facilidade em usá-las 
 
-#### Como possíveis trabalhos futuros, pode-se apontar:
 
--
--
--
--
 
 ### `Vantagens e Desvantagens:`
 
