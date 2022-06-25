@@ -298,8 +298,7 @@ int getFingerprintIDez() {
 
 ### `Conclusão:`
 
-  O sistema de trava elétrica com senha possibilitará que usuários, sejam eles no ramo de empresas, no contexto educacional, ou na vida cotidiana de qualquer pessoa
-que possuir tenham uma vida de menos preocupação em relação a segurança, e que possam controlar o acesso de usuários por meio de um cartão ssd que serão armazenados, nisso estará disponível um histórico de acesso a porta, e terá o controle de quem acessou o local, junto com a data e a hora. E caso seja um usuário cadastrado irá emitir uma luz verde que dará acesso e se não for cadastrado irá emitir uma luz vermelha que terá o acesso negado.
+  O sistema de trava elétrica com senha biométrica possibilitará que usuários, sejam eles no ramo de empresas, no contexto educacional, ou na vida cotidiana de qualquer pessoa que possuir tenham uma vida de menos preocupação em relação a segurança, e que possam controlar o acesso de usuários que serão armazenados, nisso estará disponível um histórico de acesso a porta, e terá o controle de quem acessou o local, junto com a data e a hora. E caso seja um usuário cadastrado irá emitir um bip quando colocar sua digital e terá o acesso permitido, e se não for cadastrado irá emitir 2x o bip e terá o acesso negado.
   Diante disso, esse sistema tem como solução de trazer de forma satisfatória uma segurança permanente aos usuários.
 
 ### `Trabalhos futuros:`
