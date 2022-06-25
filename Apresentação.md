@@ -59,7 +59,7 @@ Este trabalho envolverá pesquisas exploratórias como também experimental.
 O projeto levará aproximadamente 4 mês para sua devida realização.
 
 ### Apresentação
-Nosso projeto será realizado por componentes ou por etapas. Cada etapa será realizado uma parte do todo. Com isso cada parte será acomplada na outra.
+Nosso projeto será realizado por componentes ou por etapas. Cada etapa será sincronizada com a outra. Com isso cada parte será acomplada na outra.
 1° passo em nosso projeto:
 
 #### Código usado para o funcionamento do Servo Motor e do Buzzer:
