@@ -31,9 +31,8 @@ Dessa forma, este sistema será de grande importância na segurança de todos os
 
 ### `Justificativa:`
 
-  Este sistema é direcionado á usuários cadastrados via biometria, buscando tornar a vida dos mesmos mais seguras, evitando o acesso de pessoas não autorizadas. Porque sabemos que a cada dia a insegurança tem aumentado, aonde um indivíduo entra na sua casa, e rouba os seus bens materiais, que você conquistou em anos com o suor do seu trabalho, em questão de segundos. Outro exemplo muito importante é no contexto educacional, que será também resolvido o problema de insegurança, pois só terá o acesso a determinadas salas os que tiverem cadastrados no sistema, isso ajudará a evitar furtos. Os alunos só terão acesso com os professores em sala de aula, 
-
-mas principalmente preservar-se de indivíduos de fora que possam vir a entrar no local para tentar fazer um arrastão, dessa forma o sistema irá impedir o acesso deles a salas, especialmente as salas específicas que possuem bens mais caros, evitando um desastre. 
+  Este sistema é direcionado á usuários cadastrados via biometria, buscando tornar a vida dos mesmos mais seguras, evitando o acesso de pessoas não autorizadas. Porque sabemos que a cada dia a insegurança tem aumentado, aonde um indivíduo entra na sua casa, e rouba os seus bens materiais, que você conquistou em anos com o suor do seu trabalho, em questão de segundos. 
+  Outro exemplo muito importante é no contexto educacional, que será também resolvido o problema de insegurança, pois só terá o acesso a determinadas salas os que tiverem cadastrados no sistema, isso ajudará a evitar furtos. Os alunos só terão acesso com os professores em sala de aula, mas principalmente preservar-se de indivíduos de fora que possam vir a entrar no local para tentar fazer um arrastão, dessa forma o sistema irá impedir o acesso deles a salas, especialmente as salas específicas que possuem bens mais caros, evitando um desastre. 
 
 O sistema de trava elétrica com senha biométrica tem como objetivo ajudar o usuários de maneira a ter uma vida mais segura, um imóvel ou um centro educacional mais seguro. 
 
