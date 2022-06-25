@@ -58,10 +58,6 @@ Este trabalho envolverá pesquisas exploratórias como também experimental.
 ### Tempo:
 O projeto levará aproximadamente 4 mês para sua devida realização.
 
-### Coleta de dados
-
-### Análise dos dados
-
 ### Apresentação
 Nosso projeto será realizado por componentes ou por etapas. Cada etapa será realizado uma parte do todo. Com isso cada parte será acomplada na outra.
 1° passo em nosso projeto:
