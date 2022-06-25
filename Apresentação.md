@@ -42,16 +42,16 @@ Esse sistema também irá auxiliar na vida diária de cada pessoa que possui o s
 ### `Proposta Metodologica:`
 
 ### Local:
-Trabalho realizado nos laboratórios do campus IFRN
+Trabalho será realizado nos laboratórios do campus do [IFRN](https://portal.ifrn.edu.br/campus/parnamirim)
 
 ### Participantes do projeto:
-A realização deste trabalho será realizado por [Amanda Rodrigues](https://github.com/amanda-rosa) e [Williamis Silva](https://github.com/William-silva-Developer)
+A realização deste trabalho será por [Amanda Rodrigues](https://github.com/amanda-rosa) e [Williamis Silva](https://github.com/William-silva-Developer)
 
 ### Tipo estudo: 
 Quantitativo
 
 ### Tipo pesquisa: 
-Este trabalho envolveu pesquisas exploratórias como também experimental.
+Este trabalho envolverá pesquisas exploratórias como também experimental.
 
 
 
@@ -63,10 +63,51 @@ O projeto levará aproximadamente 4 mês para sua devida realização.
 ### Análise dos dados
 
 ### Apresentação
+Nosso projeto será realizado por componentes ou por etapas. Cada etapa será realizado uma parte do todo. Com isso cada parte será acomplada na outra.
+1° passo em nosso projeto:
 
+#### Código usado para o funcionamento do servo motor:
+~~~C++
+#include <Servo.h>
+ 
+#define SERVO 11 // Porta Digital 11 PWM
+ 
+Servo s; // Variável Servo
+int pos; // Posição Servo
+int buzzer = 10;
+ 
+void setup ()
+{
+  s.attach(SERVO);
+  Serial.begin(9600);
+  s.write(0); // Inicia motor posição zero
+  pinMode(buzzer, OUTPUT);
+}
+ 
+void loop()
+{
+  tone(buzzer,1500);
+  delay(500);
 
+  noTone(buzzer);
+  delay(500);
+ 
+  for(pos = 0; pos < 90; pos++)
+  {
+    s.write(pos);
+  delay(15);
+  }
+delay(1000);
+  for(pos = 90; pos >= 0; pos--)
+  {
+    s.write(pos);
+    delay(10);
+  }
+}
+~~~
 
-### `Implementação:`
+#### Código para o funcionamento do sensor biométrico:
+
 
 ### `Conclusão:`
 
