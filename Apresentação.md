@@ -105,10 +105,25 @@ delay(1000);
   }
 }
 ~~~
-#### Imgans
-[]()
+#### Imagens
+
+<div>
+  <img style={margin="8px"} src="https://user-images.githubusercontent.com/98723501/175783436-45e650cf-baa5-436e-9145-fa5f10cd898d.jpeg" alt=Servo Motor width="500"  />
+  <img src="https://user-images.githubusercontent.com/98723501/175783952-c09da35e-b816-4b7e-bc95-48576f67daa4.jpeg" alt="Servo motor e o Buzzer" width="500"/>
+</div>
+
+#### Portas usadas pelo Servo motor
+- Fio marrom com GND;
+- Fio vermelho no 5v;
+- Fio laranja no D6
+#### Buzzer
+- Resistor 220 ohms;
+- Fio vermelho no pino digital 11;
+- Fio preto no GND
+
 
 #### Código para o funcionamento do sensor biométrico:
+Este código ainda não está em conjunto com o do Servo motor.
 ~~~C++
 /*****************
   This is an example sketch for our optical Fingerprint sensor
@@ -274,6 +289,16 @@ int getFingerprintIDez() {
   return finger.fingerID;
 }
 ~~~
+#### Imagens
+<div>
+  <img src="https://user-images.githubusercontent.com/98723501/175784049-8cadb1c8-ecc6-4d8e-819a-60c7693a1849.jpeg" alt=Servo Motor width="500"  />
+</div>
+
+#### Portas:
+- Fio vermelho no 5v;
+- Fio preto no GND;
+- Fio branco na porta 3;
+- Fio verde na porta 2
 
 
 ### `Conclusão:`
