@@ -35,3 +35,10 @@ Continuando os passos... Como alternativa à publicação de alertas para tópic
 Por fim, escolher uma AWS Região que oferece suporte AWS IoT Events. Seguindo esses requisitos poderemos utilizar a IoT Events para permitir monitorar os equipamentos e as frotas de dispositivos em busca de falhas ou alterações na operação, além de acionar ações caso esses eventos ocorram. 
 
 **Quais passos técnicos para utilizar?** 
+
+
+## Estudo de caso do projeto da disciplina
+
+**Como pode ser empregado no projeto?**
+
+## Considerações
