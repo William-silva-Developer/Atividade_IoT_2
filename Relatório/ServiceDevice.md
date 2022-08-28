@@ -12,6 +12,7 @@
 - Aplicação do serviço
 - Estudo de caso do projeto da disciplina
 - Considerações finais
+- Referência
 
 
 # AWS IoT Device
