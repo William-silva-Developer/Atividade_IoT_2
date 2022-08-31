@@ -110,7 +110,7 @@ delay(1000);
 #### Portas usadas pelo Servo motor
 - Fio marrom com GND;
 - Fio vermelho no 5v;
-- Fio laranja no D6
+- Fio laranja no D11
 #### Buzzer
 - Resistor 220 ohms;
 - Fio vermelho no pino digital 11;
