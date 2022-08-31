@@ -32,9 +32,10 @@ Aqui elencamos apenas alguns dos recursos que são obrigatórios nesse tipo de s
 ## Aplicabilidade
 
 Como posso usar o AWS IoT Device Management?. Vamos procurar explicar essa dúvida um pouco.
-
 Então, feita a contratação do serviço na AWS. Temos que seguir um passo a passo para que os dispositivos estejam conectados a ela.
 
+Feita a autenticação no sistema para temos acesso aos recursos disponível. É preciso procurar pelo EC2( o EC2 é uma forma dos usuários poderem alugarem computadores virtuais para rodarem as aplicações).
+![Captura de tela de 2022-08-30 23-37-57](https://user-images.githubusercontent.com/98723501/187580464-d2aa29dc-df78-4db1-8185-6cd47baf4c6d.png)
 #
 
 ##  Estudo de caso do projeto da disciplina
