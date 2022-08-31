@@ -31,6 +31,10 @@ Aqui elencamos apenas alguns dos recursos que são obrigatórios nesse tipo de s
 
 ## Aplicabilidade
 
+Como posso usar o AWS IoT Device Management?. Vamos procurar explicar essa dúvida um pouco.
+
+Então, feita a contratação do serviço na AWS. Temos que seguir um passo a passo para que os dispositivos estejam conectados a ela.
+
 #
 
 ##  Estudo de caso do projeto da disciplina
