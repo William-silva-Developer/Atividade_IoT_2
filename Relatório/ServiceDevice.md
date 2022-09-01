@@ -57,6 +57,28 @@ Feito o passo acima devemos agora buscar opção referente a executar instancia
 
 ![Captura de tela de 2022-08-31 22-45-27](https://user-images.githubusercontent.com/98723501/187815349-5b6e2342-2941-4f4b-be36-d51132bf3e2c.png)
 
+
+![Captura de tela de 2022-08-31 23-11-05](https://user-images.githubusercontent.com/98723501/187817942-012c8a07-9354-45cd-8d1e-16e8cabd8499.png)
+
+![Captura de tela de 2022-08-31 23-25-34](https://user-images.githubusercontent.com/98723501/187819126-9de25b45-ec8d-46fb-8429-68610bf0e9c3.png)
+
+
+![Captura de tela de 2022-08-31 23-26-33](https://user-images.githubusercontent.com/98723501/187819229-527673a4-304d-4f9a-8c12-3586879b3bcd.png)
+
+![Captura de tela de 2022-08-31 23-31-37](https://user-images.githubusercontent.com/98723501/187819715-c992ccf0-3362-4c8b-9732-9069cf0ab6ff.png)
+
+![Captura de tela de 2022-08-31 23-33-08](https://user-images.githubusercontent.com/98723501/187820003-be3da634-2dc4-4800-b9ba-4c2c3484b0d6.png)
+
+![Captura de tela de 2022-08-31 23-35-55](https://user-images.githubusercontent.com/98723501/187820155-db5696b1-2664-4263-a278-edcf905ee9a8.png)
+
+![Captura de tela de 2022-08-31 23-35-55](https://user-images.githubusercontent.com/98723501/187820472-86374a69-bdb1-4f58-8916-43e43cc49e35.png)
+
+![Captura de tela de 2022-08-31 23-38-09](https://user-images.githubusercontent.com/98723501/187821006-7218d26c-e235-4e2c-9b2f-5410ba1fe214.png)
+
+![Captura de tela de 2022-08-31 23-46-18](https://user-images.githubusercontent.com/98723501/187821362-5201722e-5fc4-40d8-81a3-c11a6eb07b43.png)
+
+![Captura de tela de 2022-08-31 23-49-06](https://user-images.githubusercontent.com/98723501/187821661-09a253f9-f2e6-45b5-88c9-397f12472b3f.png)
+
 #
 
 ##  Estudo de caso do projeto da disciplina
@@ -68,3 +90,11 @@ Feito o passo acima devemos agora buscar opção referente a executar instancia
 #
 
 ## Referências
+
+https://www.spiceworks.com/tech/iot/articles/what-is-iot-device-management/
+
+https://aws.amazon.com/pt/iot-device-management/features/?pg=ln&sec=uc
+
+https://www.opservices.com.br/principais-servicos-da-aws-amazon-web-services/
+
+https://petri.com/what-is-aws-iot/
