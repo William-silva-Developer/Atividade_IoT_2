@@ -100,4 +100,4 @@ https://aws.amazon.com/pt/iot-device-management/features/?pg=ln&sec=uc
 
 https://www.opservices.com.br/principais-servicos-da-aws-amazon-web-services/
 
-https://petri.com/what-is-aws-iot/
+**LUNN.John**.Oque é AWS IoT. **Petri**,2022.Disponível em: <https://petri.com/what-is-aws-iot/#An_essential_communication_service_for_IoT_devices>. Acesso em: 25 ago. 2022.
