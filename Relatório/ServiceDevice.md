@@ -18,6 +18,7 @@
 # AWS IoT Device Management
 
 ## Introdução
+### O que é?
   O AWS IoT Device Management é um tipo de serviço que a AWS oferece a seus clientes. Esse serviço pode fazer com que o cliente gerencie remotamente seus dispositivos IoT. Esse serviço dá a possibilidade de monitorar, registrar e organizar todos os dispositivos conectados com esse serviço que vem em uma crescente expansão desses dispositivos. Esse serviço hoje é de grande ajuda, pois à medida que mais dispositivos são criados com recursos de rede, mais essa demanda cresce. Logo abaixo poderemos observar alguns dos principais recursos que esse serviço da AWS oferece.
 
 
@@ -31,14 +32,14 @@ Aqui elencamos apenas alguns dos recursos que são obrigatórios nesse tipo de s
 
 ## Aplicabilidade
 
-Como posso usar o AWS IoT Device Management?. 
-  Bem. Para responder a essa pergunta devemos começar primeiro falando sobre os requisitos para seu uso. E o principal requisito é você criar uma conta na AWS para que você ou sua empresa tenha acesso.
+### Como posso usar o AWS IoT Device Management? e quais requisitos para sua utilização? 
+  Bem. Para responder a essas perguntas devemos começar primeiro falando sobre os requisitos para seu uso. E o principal requisito é você criar uma conta na AWS para que você ou sua empresa tenha acesso.
 
- Também é interessante que tenha um bom conhecimento em comando utilizados no sistema operacional Linux, pois isso ajudará bastante no processo.
+ Também é interessante que tenha um bom conhecimento em comandos utilizados no sistema operacional Linux, pois isso ajudará bastante no processo.
 
-Então vamos lá!. Feita a contratação do serviço na AWS. Temos que seguir um passo a passo para que os dispositivos estejam conectados a ela.
+### Quais os passos tecnicos para utilizar?
 
-Feita a autenticação no sistema para temos acesso aos recursos disponível. É preciso procurar pelo EC2( o EC2 é uma forma dos usuários poderem alugarem computadores virtuais para rodarem as aplicações) e clicamos para seguimos em diante.
+Então vamos lá!. Feita a contratação do serviço na AWS. Temos que seguir um passo a passo para que os dispositivos estejam conectados a ela. Então feita a autenticação no sistema e preciso então procurar pelo EC2( o EC2 é uma forma dos usuários poderem alugarem computadores virtuais para rodarem as aplicações) e clicamos para seguimos em diante.
 
 ![Captura de tela de 2022-08-30 23-37-57](https://user-images.githubusercontent.com/98723501/187580464-d2aa29dc-df78-4db1-8185-6cd47baf4c6d.png)
 
@@ -81,8 +82,10 @@ Feito o passo acima devemos agora buscar opção referente a executar instancia
 
 #
 
-##  Estudo de caso do projeto da disciplina
+##  Estudo de caso do projeto relacionado com a disciplina
+### Como pode ser empregado no seu projeto?
 
+### Como poder ser a comunicação com o dispositivo programado com a utilização do Ethernet Shield?
 #
 
 ## Considerações finais
