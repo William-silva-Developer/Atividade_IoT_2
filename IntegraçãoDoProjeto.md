@@ -22,3 +22,9 @@
 
 
 **Json exportado do Node-red**
+
+## Práticas realizadas com sucesso
+
+### Funcionamento do Servo Motor e do Buzzer:
+
+**Código usado para o funcionamento do Servo Motor e do Buzzer:**
