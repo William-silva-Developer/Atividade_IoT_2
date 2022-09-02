@@ -87,8 +87,7 @@ Feito o passo acima devemos agora buscar opção referente a executar instancia
 
 ## Considerações finais
 
-A IoT é um dos players do mercado de cloud. Uma empresa que ao longo dos últimos anos cresceu exponencialmente e as soluções de IoT voltados para área empresarial também cresceram e vem crescendo absurdamente.
-A AWS é uma empresa com vários recursos para a área de IoT no mercado. Permitindo que seus clientes possam conectar vários dispositivos à nuvem da Amazon e possam operar ou controlá-los remotamente. Porém ela não é o único player existente no mercado de cloud. Ela possui como concorrentes a Microsoft Azure e a Google Cloud Platform.
+A IoT é um dos players do mercado de cloud. Uma empresa que ao longo dos últimos anos cresceu exponencialmente e as soluções de IoT voltados para área empresarial também vem crescendo. A AWS é uma empresa com vários recursos para a área de IoT no mercado. Permitindo que seus clientes possam conectar vários dispositivos à nuvem da Amazon e possam operar ou controlá-los remotamente. Porém ela não é o único player existente no mercado de cloud. Ela possui  concorrentes de alto nível também,como a Microsoft Azure e a Google Cloud Platform. Essas oferecem produtos tão bons quanto a AWS. Hoje quando pensamos em serviço de cloud computing a primeira empresa que nos vem à mente é a AWS ou como também é conhecida Amazon.
 
 #
 
