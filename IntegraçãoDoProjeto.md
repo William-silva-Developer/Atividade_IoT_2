@@ -8,7 +8,7 @@
 
 ## Descrição da integração do projeto
 
-
+  O nosso projeto de trava elétrica no momento é uma versão beta, que está em teste para a versão final.
 
 
 ## Construção do dashboard
