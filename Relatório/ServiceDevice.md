@@ -83,7 +83,7 @@ Feito o passo acima devemos agora buscar opção referente a executar instancia
 #
 
 ##  Estudo de caso do projeto relacionado com a disciplina
-### Como pode ser empregado no seu projeto? e como poder a comunicação com o dispositivo programado com a utilização do Ethernet Shield?
+### Como pode ser empregado no seu projeto? e como poder ser a comunicação com o dispositivo programado com a utilização do Ethernet Shield?
 
 O Ethernet Shield tem suporte para trabalhar com o protocolo MQTT(Message Queuing Telemetry Transport) que é provido de uma biblioteca que podemos encontrar no Arduino IDE ou no endereço eletronico:  https://github.com/knolleary/pubsubclient . Para haver interação com a rede é necessário que coloquemos o ethernet shield sobre a placa do arduíno e conectá-la à rede via cabo de rede, pois o ethernet shield possui entrada para o RJ45. 
 Também é necessário fazermos algumas configurações dentro do arquivo ou biblioteca, como: configuramos para que o dispositivo possua um endereço ip como também o enderço do servidor. Logo abaixo é possível vermos o código da bibliotema **PubSubClient** que foi usada em nosso pequeno projeto.
