@@ -83,9 +83,95 @@ Feito o passo acima devemos agora buscar opção referente a executar instancia
 #
 
 ##  Estudo de caso do projeto relacionado com a disciplina
-### Como pode ser empregado no seu projeto?
+### Como pode ser empregado no seu projeto? e como poder a comunicação com o dispositivo programado com a utilização do Ethernet Shield?
 
-### Como poder ser a comunicação com o dispositivo programado com a utilização do Ethernet Shield?
+O Ethernet Shield tem suporte para trabalhar com o protocolo MQTT(Message Queuing Telemetry Transport) que é provido de uma biblioteca que podemos encontrar no Arduino IDE ou no endereço eletronico:  https://github.com/knolleary/pubsubclient . Para haver interação com a rede é necessário que coloquemos o ethernet shield sobre a placa do arduíno e conectá-la à rede via cabo de rede, pois o ethernet shield possui entrada para o RJ45. 
+Também é necessário fazermos algumas configurações dentro do arquivo ou biblioteca, como: configuramos para que o dispositivo possua um endereço ip como também o enderço do servidor. Logo abaixo é possível vermos o código da bibliotema **PubSubClient** que foi usada em nosso pequeno projeto.
+
+~~~c
+#include <SPI.h>
+#include <Ethernet.h>
+#include <PubSubClient.h>
+
+// Endereçamento IP utilizado para o cliente e servidor
+byte mac[]    = { 0xDE, 0xED, 0xBA, 0xFE, 0xFE, 0xED };
+IPAddress ip(192, 168, 2, 20);
+IPAddress server(192, 168, 2, 10);
+
+EthernetClient ethClient;
+PubSubClient client(ethClient);
+
+//Função callback chamada quando uma mensagem for recebida para subscrições:
+void callback(char* topic, byte* payload, unsigned int length) {
+  Serial.print("message arrived [");
+  Serial.print(topic);
+  Serial.print("] ");
+  for (int i=0;i<length;i++) {
+    Serial.print((char)payload[i]);
+  }
+  Serial.println();
+  //comanda o LED
+  if ((char)payload[0] == '1') {
+    digitalWrite(4, HIGH);
+  } else if  ((char)payload[0] == '0') {
+    digitalWrite(4, LOW);
+  } 
+}
+
+void setup()
+{
+  Serial.begin(57600);
+
+  pinMode(4, OUTPUT);
+
+  client.setServer(server, 1883);
+  client.setCallback(callback);
+
+  Ethernet.begin(mac, ip);
+  delay(5000); // Allow the hardware to sort itself out
+  
+  delay(10000);
+}
+
+void loop(){
+  // Aguarda conexão    
+  while (!client.connected()) {
+
+    Serial.print("Attempting MQTT connection...");
+
+    //Mensagem lastWill
+    byte willQoS = 0;
+    const char* willTopic = "arduino/status";
+    const char* willMessage = "OFF_LINE";
+    boolean willRetain = true;
+    //Conexão
+    if (client.connect("arduinoClient", willTopic, willQoS, willRetain, willMessage)) {
+      Serial.println("connected");
+      //Uma vez conectado publica status
+      char* message = "ON_LINE";
+      int length = strlen(message);
+      boolean retained = true; //Retain message
+      client.publish("arduino/status", (byte*)message, length, retained);
+      // ... and resubscribe
+      client.subscribe("arduino/led");
+    } else {
+      Serial.print("failed, rc=");
+      Serial.print(client.state());
+      Serial.println(" try again in 5 seconds");
+      delay(5000);
+    }
+  }
+  //Uma vez conectado client.loop() deve ser chamada periodicamente para manter conexão
+  //e aguardar recebimento de mensagens
+  client.loop();
+}
+~~~
+
+
+
+
+
+
 #
 
 ## Considerações finais
@@ -96,10 +182,12 @@ A IoT é um dos players do mercado de cloud. Uma empresa que ao longo dos últim
 
 ## Referências
 
-https://www.spiceworks.com/tech/iot/articles/what-is-iot-device-management/
+**BASUMALLICK. Chiradeep**. What Is IoT Device Management? Definition, Key Features, and Software. **Spice works**,2022. Disponível em:<https://www.spiceworks.com/tech/iot/articles/what-is-iot-device-management/>.Acesso em: 14 ago. 2022.
 
-https://aws.amazon.com/pt/iot-device-management/features/?pg=ln&sec=uc
+RECURSOS do AWS IoT Device Management. **AWS**. Disponível em: <https://aws.amazon.com/pt/iot-device-management/features/?pg=ln&sec=uc>. Acesso em: 16 ago. 2022.
 
-https://www.opservices.com.br/principais-servicos-da-aws-amazon-web-services/
+
+**TEBALDI.Pedro César**.Conheça os 20 principais serviços da AWS: Amazon Web Services. **Opservices**,2018. Disponível em: <https://www.opservices.com.br/principais-servicos-da-aws-amazon-web-services/>. Acesso em: 15 ago. 2022.
+
 
 **LUNN.John**.Oque é AWS IoT. **Petri**,2022.Disponível em: <https://petri.com/what-is-aws-iot/#An_essential_communication_service_for_IoT_devices>. Acesso em: 25 ago. 2022.
