@@ -9,6 +9,12 @@
 ## Descrição da integração do projeto
 
   O nosso projeto de trava elétrica no momento é uma versão beta, que está em teste para a versão final.
+  
+  Nas aulas práticas fizemos os testes com o servo motor, o buzzer, o sensor biométrico e utilizando o MQTT.
+  
+  Fizemos por parte os testes, só fizemos junto o servo motor com o buzzer.
+  
+  Não deu para ver o teste de todos juntos funcionando por causa do bloqueio de segurança do IFRN.
 
 
 ## Construção do dashboard
@@ -261,3 +267,160 @@ int getFingerprintIDez() {
 - Fio branco na porta 3;
 - Fio verde na porta 2
 
+
+**Código completo com o MQTT:** Código completo - Servo motor, buzzer, sensor biométrico e o uso do MQTT. 
+
+**Obs:** Não deu para ver o teste de todos juntos funcionando por causa do bloqueio de segurança do IFRN. 
+~~~c
+#include <SPI.h>
+#include <Ethernet.h>
+#include <PubSubClient.h>
+
+
+// Endereçamento IP utilizado para o cliente e servidor
+byte mac[]    = { 0xDE, 0xED, 0xBA, 0xFE, 0xFE, 0xED };
+IPAddress ip(192, 168, 1, 50);
+IPAddress server(192, 168, 1, 19);
+
+EthernetClient ethClient;
+PubSubClient client(ethClient);
+
+
+#include <Servo.h>
+#define SERVO 11 // Porta Digital 11 PWM
+ 
+Servo s; // Variável Servo
+int pos; // Posição Servo
+int buzzer = 10;
+ 
+void setup ()
+{
+  s.attach(SERVO);
+  Serial.begin(9600);
+  s.write(0); // Inicia motor posição zero
+  pinMode(buzzer, OUTPUT);
+
+
+ /// Configuração MQTT
+ Serial.begin(57600);
+
+  pinMode(4, OUTPUT);
+
+  client.setServer(server, 1883);
+  client.setCallback(callback);
+
+  Ethernet.begin(mac, ip);
+  delay(5000); // Allow the hardware to sort itself out
+ 
+  delay(10000);
+
+ 
+}
+
+
+void abrir(){
+    for(pos = 0; pos < 90; pos++)
+    {
+      s.write(pos);
+      delay(15);
+    }
+}
+
+void fechar(){
+  delay(1000);
+  for(pos = 90; pos >= 0; pos--)
+  {
+    s.write(pos);
+    delay(10);
+  }
+
+}
+ 
+void loop()
+{
+  tone(buzzer,1500);
+  delay(500);
+
+  noTone(buzzer);
+  delay(500);
+ 
+  for(pos = 0; pos < 90; pos++)
+  {
+    s.write(pos);
+  delay(15);
+  }
+delay(1000);
+  for(pos = 90; pos >= 0; pos--)
+  {
+    s.write(pos);
+    delay(10);
+  }
+
+
+
+/// Configuração MQTT
+
+ // Aguarda conexão    
+  while (!client.connected()) {
+
+    Serial.print("Attempting MQTT connection...");
+
+    //Mensagem lastWill
+    byte willQoS = 0;
+    const char* willTopic = "arduino/status";
+    const char* willMessage = "OFF_LINE";
+    boolean willRetain = true;
+    //Conexão
+    if (client.connect("arduinoClient", willTopic, willQoS, willRetain, willMessage)) {
+      Serial.println("connected");
+      //Uma vez conectado publica status
+      char* message = "Trava aberta";
+      int length = strlen(message);
+      boolean retained = true; //Retain message
+      client.publish("arduino/status", (byte*)message, length, retained);
+      // ... and resubscribe
+      delay(5000);
+      client.publish("arduino/status", (byte*)"Trava fechada", length, retained);
+      client.subscribe("arduino/led");
+    } else {
+      Serial.print("failed, rc=");
+      Serial.print(client.state());
+      Serial.println(" try again in 5 seconds");
+      delay(5000);
+    }
+  }
+  //Uma vez conectado client.loop() deve ser chamada periodicamente para manter conexão
+  //e aguardar recebimento de mensagens
+  client.loop();
+
+
+
+}
+
+
+
+
+//Função callback chamada quando uma mensagem for recebida para subscrições:
+void callback(char* topic, byte* payload, unsigned int length) {
+  Serial.print("message arrived [");
+  Serial.print(topic);
+  Serial.print("] ");
+  for (int i=0;i<length;i++) {
+    Serial.print((char)payload[i]);
+  }
+  Serial.println();
+  //comanda o LED
+  if ((char)payload[0] == '1') {
+    // Chamar a função para abrir
+
+  abrir();
+ 
+    digitalWrite(4, HIGH);
+  } else if  ((char)payload[0] == '0') {
+     // Chamar a função para fechar
+     
+  fechar();
+   
+    digitalWrite(4, LOW);
+  }
+~~~
