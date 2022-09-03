@@ -19,7 +19,11 @@
 
 ## Construção do dashboard
 
-**Imagens do dashboard**
+**Dashboard**
+: Fizemos um simples dashboard usando o Node-Red para controlar por meio dele a nossa fechadura.
+Nela criamos um 2 botões onde um com a função de abrir e outro com a função de fechar. Também adicionamos um pequeno led que acenderá para verde quando a fechadura estiver aberta e acenderá em vermelho para indicar que ela estará fechada.
+
+
 ![Captura de tela de 2022-09-02 22-14-26](https://user-images.githubusercontent.com/98723501/188250185-3a1baaa9-0770-4898-ac06-0a8a1f8e939e.png)
 
 
