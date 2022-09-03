@@ -36,7 +36,7 @@ Nela criamos um 2 botões onde um com a função de abrir e outro com a função
 
 ![Captura de tela de 2022-09-02 22-38-38](https://user-images.githubusercontent.com/98723501/188250967-502dfab5-b176-4731-8019-a8aad32552f7.png)
 
-
+#
 
 **Json exportado do Node-red**
 
@@ -218,6 +218,8 @@ Nela criamos um 2 botões onde um com a função de abrir e outro com a função
     }
 ]
 ~~~
+
+#
 
 ## Práticas realizadas com sucesso
 
