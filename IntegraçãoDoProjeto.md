@@ -30,7 +30,7 @@ Nela criamos um 2 botões onde um com a função de abrir e outro com a função
 
 ![Captura de tela de 2022-09-02 22-20-55](https://user-images.githubusercontent.com/98723501/188250691-47a69ab9-f5c8-4ec2-a683-fb70aaeb62b7.png)
 
-
+#
 
 **Imagens dos flows**
 
@@ -39,6 +39,185 @@ Nela criamos um 2 botões onde um com a função de abrir e outro com a função
 
 
 **Json exportado do Node-red**
+
+
+~~~json
+[
+    {
+        "id": "199177ca200aa869",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "39f3a508de6a2b63",
+        "type": "mqtt in",
+        "z": "199177ca200aa869",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "4fb5742d4b6cf302"
+            ]
+        ]
+    },
+    {
+        "id": "c2ef3f8d3d043fd7",
+        "type": "mqtt out",
+        "z": "199177ca200aa869",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 130,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "43db454c2cb1d5a7",
+        "type": "ui_text",
+        "z": "199177ca200aa869",
+        "group": "3ef3a9ac661f815a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "STATUS",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 620,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4fb5742d4b6cf302",
+        "type": "ui_button",
+        "z": "199177ca200aa869",
+        "name": "",
+        "group": "3ef3a9ac661f815a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "FECHAR",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "43db454c2cb1d5a7",
+                "d27fa785cfbe13ba"
+            ]
+        ]
+    },
+    {
+        "id": "29f626d1d8d631fa",
+        "type": "ui_button",
+        "z": "199177ca200aa869",
+        "name": "",
+        "group": "3ef3a9ac661f815a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "ABRIR",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "43db454c2cb1d5a7",
+                "d27fa785cfbe13ba",
+                "c2ef3f8d3d043fd7"
+            ]
+        ]
+    },
+    {
+        "id": "d27fa785cfbe13ba",
+        "type": "ui_led",
+        "z": "199177ca200aa869",
+        "order": 3,
+        "group": "3ef3a9ac661f815a",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 610,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3ef3a9ac661f815a",
+        "type": "ui_group",
+        "name": "CONTROLE",
+        "tab": "e586a742c8c04215",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e586a742c8c04215",
+        "type": "ui_tab",
+        "name": "CONTROLE EXTERNO DA FECHADURA",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
+~~~
 
 ## Práticas realizadas com sucesso
 
