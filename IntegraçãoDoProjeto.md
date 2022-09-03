@@ -18,6 +18,7 @@
 
 
 ## Construção do dashboard
+![Captura de tela de 2022-09-02 22-14-26](https://user-images.githubusercontent.com/98723501/188250185-3a1baaa9-0770-4898-ac06-0a8a1f8e939e.png)
 
 **Imagens do dashboard**
 
