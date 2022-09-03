@@ -27,6 +27,7 @@ Nela criamos um 2 botões onde um com a função de abrir e outro com a função
 ![Captura de tela de 2022-09-02 22-14-26](https://user-images.githubusercontent.com/98723501/188250185-3a1baaa9-0770-4898-ac06-0a8a1f8e939e.png)
 
 #
+Luz vermelha indicando que a porta está fechada.
 
 ![Captura de tela de 2022-09-02 22-20-55](https://user-images.githubusercontent.com/98723501/188250691-47a69ab9-f5c8-4ec2-a683-fb70aaeb62b7.png)
 
